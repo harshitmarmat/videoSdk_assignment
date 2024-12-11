@@ -1,0 +1,38 @@
+@import '@fontsource/lato/index.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .scrollbar-hidden {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+  }
+
+body {
+    background-color: #161616;
+}
+
+
+.hero {
+    border: 2px solid transparent;
+    border-image: linear-gradient(319.22deg, rgba(195, 41, 190, 0.624) 30.52%, rgba(85, 104, 254, 0.56) 60.7%);
+    border-image-slice: 30;
+}
+
+.reverse-hero {
+    border: 2px solid transparent;
+    border-image: linear-gradient(319.22deg, rgba(85, 104, 254, 0.56) 30.52%,rgba(195, 41, 190, 0.624)  60.7%);
+    border-image-slice: 30;
+}
+.logo-shadow {
+  box-shadow: 0px -90px 95px 12px rgba(22,22,22,0.81);
+-webkit-box-shadow: 0px -90px 95px 12px rgba(22,22,22,0.81);
+-moz-box-shadow: 0px -90px 95px 12px rgba(22,22,22,0.81);
+}
